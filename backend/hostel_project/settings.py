@@ -120,7 +120,10 @@ SIMPLE_JWT = {
 # ==============================
 # 🌐 CORS
 # ==============================
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOWED_ORIGINS = [
+    "https://your-frontend.netlify.app",  # replace with actual
+    # add more if needed
+]
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_HEADERS = ["*"]
 
