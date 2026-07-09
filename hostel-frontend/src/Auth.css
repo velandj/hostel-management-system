@@ -1,0 +1,107 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 320px;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.card h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.card input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.card input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.card button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .auth-container {
+    gap: 20px;
+    margin-top: 30px;
+  }
+
+  .card {
+    width: 280px;
+    padding: 20px;
+  }
+
+  .card h3 {
+    font-size: 18px;
+  }
+
+  .card input {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+
+  .card button {
+    font-size: 14px;
+    padding: 9px;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .card {
+    width: 90%;
+    padding: 18px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card input {
+    font-size: 12px;
+    padding: 7px 9px;
+  }
+
+  .card button {
+    font-size: 13px;
+    padding: 8px;
+  }
+}
